@@ -91,9 +91,29 @@ li:last-child {
 }
 
 li:nth-child(even) {
+  /* color: red; */
+}
+/* Misconeption it doesn't work */
+article p:first-child {
   color: red;
 }
 
-article p:last-child {
-  color: red;
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+  text-transform: uppercase;
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: underline wavy magenta;
+}
+
+a:active {
+  font-style: italic;
+  background-color: cyan;
 }
