@@ -90,30 +90,53 @@ li:last-child {
   font-style: italic;
 }
 
-li:nth-child(even) {
-  /* color: red; */
-}
-/* Misconeption it doesn't work */
-article p:first-child {
+li:nth-child(4) {
   color: red;
 }
 
+header p:nth-child(3) {
+  color: red;
+}
+
+/* Styling links */
 a:link {
   color: #1098ad;
   text-decoration: none;
 }
 
 a:visited {
-  color: #1098ad;
-  text-transform: uppercase;
+  color: pink;
 }
 
 a:hover {
+  color: orangered;
   font-weight: bold;
-  text-decoration: underline wavy magenta;
+  text-decoration: underline orangered;
 }
 
 a:active {
+  background-color: black;
   font-style: italic;
-  background-color: cyan;
 }
+
+.related:hover {
+  background-color: purple;
+}
+
+/* Resolving conflicts */
+
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+} */
