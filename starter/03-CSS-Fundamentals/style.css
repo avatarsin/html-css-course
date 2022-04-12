@@ -197,6 +197,33 @@ button {
   bottom: 50px;
   right: 50px;
 }
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* p::first-line {
+  color: pink;
+} */
+h3 + p::first-line {
+  color: pink;
+}
+
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+h2::after {
+  content: "TOP";
+  color: #444;
+  font-size: 16px;
+  background-color: yellow;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
 /* Resolving conflicts */
 
 /* #copyright {
