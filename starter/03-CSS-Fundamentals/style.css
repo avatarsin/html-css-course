@@ -164,9 +164,9 @@ a:active {
   font-style: italic;
 }
 
-.related:hover {
+/* .related:hover {
   background-color: purple;
-}
+} */
 
 .post-img {
   width: 100%;
