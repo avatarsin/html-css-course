@@ -14,7 +14,8 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
+        /* height: 150px; */
+        /* width: 300px; */
       }
       .el--4 {
         background-color: goldenrod;
@@ -38,12 +39,22 @@
         background-color: #ddd;
         font-size: 40px;
         margin: 40px;
-
+        height: 600px;
         /* CSS GRID */
+        display: grid;
+        /* grid-template-columns: 250px 250px 1fr 1fr; */
+        /* grid-template-rows: 300px 200px; */
+        /* grid-template-columns: 1fr 2fr 1fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        /* gap: 30px; */
+        column-gap: 30px;
+        row-gap: 60px;
       }
 
       .container--2 {
         /* STARTER */
+        display: none;
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
