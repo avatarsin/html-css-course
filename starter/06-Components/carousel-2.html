@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      /*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+      /* Main Color: #087f5b
+  Grey Color: #343a40
+*/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      .carousel {
+        width: 800px;
+        margin: 100px auto;
+        background-color: #087f5b;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 86px;
+        padding: 32px;
+        padding-left: 86px;
+        border-radius: 8px;
+        color: #fff;
+      }
+      img {
+        height: 200px;
+        transform: scale(1.5);
+        border-radius: 8px;
+        box-shadow: 0 24px 32px rgba(0, 0, 0, 0.2);
+      }
+
+      .testimonial-text {
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 24px;
+      }
+
+      .testimonial-name {
+        margin-bottom: 4px;
+        font-size: 14px;
+        color: #c3fae8;
+      }
+
+      .testimonial-job {
+        color: #96f2d7;
+        font-size: 12px;
+      }
+      .btn {
+        position: absolute;
+        top: 50%;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      .btn--left {
+        left: 0;
+        transform: translate(-50%, -50%);
+      }
+      .btn--right {
+        transform: translate(50%, -50%);
+        right: 0;
+      }
+
+      .btn-icon {
+        height: 24px;
+        width: 24px;
+        stroke: #087f5b;
+      }
+
+      .dots {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 32px);
+        display: flex;
+        gap: 12px;
+      }
+      .dot {
+        height: 12px;
+        width: 12px;
+        border: 2px solid #087f5b;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .dot-fill {
+        background-color: #087f5b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="maria.jpg" alt="Maria Image" />
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+          commodi, quae voluptas recusandae iusto soluta modi harum vitae veniam
+          earum doloribus unde quod aliquam iste doloremque suscipit cum ex
+          voluptatum!"
+        </p>
+        <p class="testimonial-name">Maria de Almeida</p>
+        <p class="testimonial-job">Senior Product Manager at EDP commercial</p>
+      </blockquote>
+      <button class="btn btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+      <button class="btn btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
+
+      <div class="dots">
+        <button class="dot dot-fill">&nbsp;</button
+        ><button class="dot">&nbsp;</button><button class="dot">&nbsp;</button
+        ><button class="dot">&nbsp;</button>
+      </div>
+    </div>
+  </body>
+</html>
